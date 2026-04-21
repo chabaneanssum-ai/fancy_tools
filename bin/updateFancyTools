@@ -1,4 +1,4 @@
- #!/bin/bash
+#!/bin/bash
 
 #aller dens le dossie
 cd~/Documents/TP_Git/tp_shall/.git/scr/fancy_tools || {
@@ -25,4 +25,4 @@ cp bin/updateFancyTools ~/bin/
 
 echo "mise a jour termine" 
 
-
+chmod +x ~/bin/updateFancyTools
