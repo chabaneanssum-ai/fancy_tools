@@ -1,0 +1,28 @@
+ #!/bin/bash
+
+#aller dens le dossie
+cd~/Documents/TP_Git/tp_shall/.git/scr/fancy_tools || {
+	echo "Dossiet introuvable"
+	exit 1
+}
+
+#verifier le branch
+
+branch=$(git branch --show-current
+
+if [ "$branch" != "main" ]; then
+	echo "Erreur :vous n'est pas sur le pbanche main"
+	exit 1
+fi
+
+#mettre a jour
+
+git pull
+
+##copie sur bin
+
+cp bin/updateFancyTools ~/bin/
+
+echo "mise a jour termine" 
+
+
